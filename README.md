@@ -1,3 +1,5 @@
+[![Go Reference](https://pkg.go.dev/badge/github.com/guilhem/garage-go.svg)](https://pkg.go.dev/github.com/guilhem/garage-go)
+
 # garage
 
 Developer-friendly & type-safe Go SDK specifically catered to leverage *garage* API.
