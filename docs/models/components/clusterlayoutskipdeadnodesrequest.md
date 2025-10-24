@@ -1,0 +1,9 @@
+# ClusterLayoutSkipDeadNodesRequest
+
+
+## Fields
+
+| Field                                                                                                              | Type                                                                                                               | Required                                                                                                           | Description                                                                                                        |
+| ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
+| `AllowMissingData`                                                                                                 | *bool*                                                                                                             | :heavy_check_mark:                                                                                                 | Allow the skip even if a quorum of nodes could not be found for<br/>the data among the remaining nodes             |
+| `Version`                                                                                                          | *int64*                                                                                                            | :heavy_check_mark:                                                                                                 | Version number of the layout to assume is currently up-to-date.<br/>This will generally be the current layout version. |

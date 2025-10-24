@@ -1,0 +1,21 @@
+workflowVersion: 1.0.0
+speakeasyVersion: latest
+sources:
+    Garage administration API:
+        inputs:
+            - location: https://garagehq.deuxfleurs.fr/api/garage-admin-v2.json
+        overlays:
+            - location: .speakeasy/speakeasy-modifications-overlay.yaml
+        output: .speakeasy/out.openapi.yaml
+        registry:
+            location: registry.speakeasyapi.dev/barpilot/garage/garage-administration-api
+targets:
+    garage:
+        target: go
+        source: Garage administration API
+        codeSamples:
+            registry:
+                location: registry.speakeasyapi.dev/barpilot/garage/garage-administration-api-go-code-samples
+            labelOverride:
+                fixedValue: Go (SDK)
+            blocking: false

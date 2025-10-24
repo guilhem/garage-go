@@ -1,0 +1,9 @@
+# ApplyClusterLayoutResponse
+
+
+## Fields
+
+| Field                                                                                           | Type                                                                                            | Required                                                                                        | Description                                                                                     |
+| ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| `HTTPMeta`                                                                                      | [components.HTTPMetadata](../../models/components/httpmetadata.md)                              | :heavy_check_mark:                                                                              | N/A                                                                                             |
+| `ApplyClusterLayoutResponse`                                                                    | [*components.ApplyClusterLayoutResponse](../../models/components/applyclusterlayoutresponse.md) | :heavy_minus_sign:                                                                              | The updated cluster layout has been applied in the cluster                                      |

@@ -1,0 +1,9 @@
+# ClusterLayoutSkipDeadNodesResponse
+
+
+## Fields
+
+| Field                                                                                                           | Type                                                                                                            | Required                                                                                                        | Description                                                                                                     |
+| --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| `HTTPMeta`                                                                                                      | [components.HTTPMetadata](../../models/components/httpmetadata.md)                                              | :heavy_check_mark:                                                                                              | N/A                                                                                                             |
+| `ClusterLayoutSkipDeadNodesResponse`                                                                            | [*components.ClusterLayoutSkipDeadNodesResponse](../../models/components/clusterlayoutskipdeadnodesresponse.md) | :heavy_minus_sign:                                                                                              | Request has been taken into account                                                                             |

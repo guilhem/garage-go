@@ -1,0 +1,9 @@
+# CleanupIncompleteUploadsResponse
+
+
+## Fields
+
+| Field                                                                                                       | Type                                                                                                        | Required                                                                                                    | Description                                                                                                 |
+| ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| `HTTPMeta`                                                                                                  | [components.HTTPMetadata](../../models/components/httpmetadata.md)                                          | :heavy_check_mark:                                                                                          | N/A                                                                                                         |
+| `CleanupIncompleteUploadsResponse`                                                                          | [*components.CleanupIncompleteUploadsResponse](../../models/components/cleanupincompleteuploadsresponse.md) | :heavy_minus_sign:                                                                                          | The bucket was cleaned up successfully                                                                      |

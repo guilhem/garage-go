@@ -1,0 +1,9 @@
+# RetryBlockResyncRequest
+
+
+## Fields
+
+| Field                                                                                                        | Type                                                                                                         | Required                                                                                                     | Description                                                                                                  |
+| ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------ |
+| `Node`                                                                                                       | *string*                                                                                                     | :heavy_check_mark:                                                                                           | Node ID to query, or `*` for all nodes, or `self` for the node responding to the request                     |
+| `LocalRetryBlockResyncRequest`                                                                               | [components.LocalRetryBlockResyncRequestUnion](../../models/components/localretryblockresyncrequestunion.md) | :heavy_check_mark:                                                                                           | N/A                                                                                                          |

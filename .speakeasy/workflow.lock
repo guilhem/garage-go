@@ -1,0 +1,39 @@
+speakeasyVersion: 1.639.3
+sources:
+    Garage administration API:
+        sourceNamespace: garage-administration-api
+        sourceRevisionDigest: sha256:7672e6e1b841d56148a915308c6dcaab08acb004c1cb81eba48d8c6ab1550a7c
+        sourceBlobDigest: sha256:568e458affc86a5c87ce712ea0acd44e2fd82dfd9a5441472911d14ae2b3d87b
+        tags:
+            - latest
+            - v2.1.0
+targets:
+    garage:
+        source: Garage administration API
+        sourceNamespace: garage-administration-api
+        sourceRevisionDigest: sha256:7672e6e1b841d56148a915308c6dcaab08acb004c1cb81eba48d8c6ab1550a7c
+        sourceBlobDigest: sha256:568e458affc86a5c87ce712ea0acd44e2fd82dfd9a5441472911d14ae2b3d87b
+        codeSamplesNamespace: garage-administration-api-go-code-samples
+        codeSamplesRevisionDigest: sha256:4d8c9514c5c3eeea1acc71130300b3f1a9bbd1f77bd8bc0c272a44f5e405e2b9
+workflow:
+    workflowVersion: 1.0.0
+    speakeasyVersion: latest
+    sources:
+        Garage administration API:
+            inputs:
+                - location: https://garagehq.deuxfleurs.fr/api/garage-admin-v2.json
+            overlays:
+                - location: .speakeasy/speakeasy-modifications-overlay.yaml
+            output: .speakeasy/out.openapi.yaml
+            registry:
+                location: registry.speakeasyapi.dev/barpilot/garage/garage-administration-api
+    targets:
+        garage:
+            target: go
+            source: Garage administration API
+            codeSamples:
+                registry:
+                    location: registry.speakeasyapi.dev/barpilot/garage/garage-administration-api-go-code-samples
+                labelOverride:
+                    fixedValue: Go (SDK)
+                blocking: false

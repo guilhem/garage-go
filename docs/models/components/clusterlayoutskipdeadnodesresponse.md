@@ -1,0 +1,9 @@
+# ClusterLayoutSkipDeadNodesResponse
+
+
+## Fields
+
+| Field                                                                                                 | Type                                                                                                  | Required                                                                                              | Description                                                                                           |
+| ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| `AckUpdated`                                                                                          | []*string*                                                                                            | :heavy_check_mark:                                                                                    | Nodes for which the ACK update tracker has been updated to `version`                                  |
+| `SyncUpdated`                                                                                         | []*string*                                                                                            | :heavy_check_mark:                                                                                    | If `allow_missing_data` is set,<br/>nodes for which the SYNC update tracker has been updated to `version` |

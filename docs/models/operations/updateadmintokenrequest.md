@@ -1,0 +1,9 @@
+# UpdateAdminTokenRequest
+
+
+## Fields
+
+| Field                                                                                            | Type                                                                                             | Required                                                                                         | Description                                                                                      |
+| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
+| `ID`                                                                                             | *string*                                                                                         | :heavy_check_mark:                                                                               | Admin API token ID                                                                               |
+| `UpdateAdminTokenRequestBody`                                                                    | [components.UpdateAdminTokenRequestBody](../../models/components/updateadmintokenrequestbody.md) | :heavy_check_mark:                                                                               | N/A                                                                                              |

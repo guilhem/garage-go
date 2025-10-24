@@ -1,0 +1,741 @@
+lockVersion: 2.0.0
+id: 598cf45f-27b2-4e16-bf20-64ce51376118
+management:
+  docChecksum: 0cbf45e33208d35e2b4d66b03d22b712
+  docVersion: v2.1.0
+  speakeasyVersion: 1.639.3
+  generationVersion: 2.730.5
+  releaseVersion: 0.1.1
+  configChecksum: 81740f078f3608b298ff8230907b7599
+features:
+  go:
+    additionalDependencies: 0.1.0
+    constsAndDefaults: 0.1.12
+    core: 3.12.0
+    defaultEnabledRetries: 0.2.0
+    devContainers: 2.90.0
+    envVarSecurityUsage: 0.3.2
+    flattening: 2.81.1
+    globalSecurity: 2.82.12
+    globalSecurityCallbacks: 0.1.0
+    globalSecurityFlattening: 0.1.0
+    globalServerURLs: 2.82.3
+    groups: 2.81.3
+    intellisenseMarkdownSupport: 0.1.0
+    methodSecurity: 2.82.4
+    nameOverrides: 2.81.2
+    nullables: 0.2.1
+    responseFormat: 0.1.2
+    retries: 2.84.2
+    sdkHooks: 0.2.0
+    unions: 2.87.0
+generatedFiles:
+  - .devcontainer/README.md
+  - .devcontainer/devcontainer.json
+  - .devcontainer/setup.sh
+  - .gitattributes
+  - /models/components/addbucketaliasrequestunion.go
+  - /models/components/addbucketaliasresponse.go
+  - /models/components/allowbucketkeyrequest.go
+  - /models/components/apibucketkeyperm.go
+  - /models/components/apibucketquotas.go
+  - /models/components/applyclusterlayoutrequest.go
+  - /models/components/applyclusterlayoutresponse.go
+  - /models/components/blockerror.go
+  - /models/components/blockversion.go
+  - /models/components/blockversionbacklinkunion.go
+  - /models/components/bucketlocalalias.go
+  - /models/components/cleanupincompleteuploadsrequest.go
+  - /models/components/cleanupincompleteuploadsresponse.go
+  - /models/components/clusterlayoutskipdeadnodesrequest.go
+  - /models/components/clusterlayoutskipdeadnodesresponse.go
+  - /models/components/clusterlayoutversion.go
+  - /models/components/clusterlayoutversionstatus.go
+  - /models/components/connectnoderesponse.go
+  - /models/components/createadmintokenresponse.go
+  - /models/components/createbucketlocalalias.go
+  - /models/components/createbucketrequest.go
+  - /models/components/createkeyrequest.go
+  - /models/components/createkeyresponse.go
+  - /models/components/freespaceresp.go
+  - /models/components/getadmintokeninforesponse.go
+  - /models/components/getbucketinfokey.go
+  - /models/components/getbucketinfowebsiteresponse.go
+  - /models/components/getclusterhealthresponse.go
+  - /models/components/getclusterlayouthistoryresponse.go
+  - /models/components/getclusterlayoutresponse.go
+  - /models/components/getclusterstatisticsresponse.go
+  - /models/components/getclusterstatusresponse.go
+  - /models/components/httpmetadata.go
+  - /models/components/importkeyrequest.go
+  - /models/components/inspectobjectblock.go
+  - /models/components/inspectobjectresponse.go
+  - /models/components/inspectobjectversion.go
+  - /models/components/keyinfobucketresponse.go
+  - /models/components/keyperm.go
+  - /models/components/layoutnoderole.go
+  - /models/components/layoutparameters.go
+  - /models/components/listbucketsresponseitem.go
+  - /models/components/listkeysresponseitem.go
+  - /models/components/localgetblockinforequest.go
+  - /models/components/localgetworkerinforequest.go
+  - /models/components/localgetworkervariablerequest.go
+  - /models/components/locallaunchrepairoperationrequest.go
+  - /models/components/locallistworkersrequest.go
+  - /models/components/localretryblockresyncrequestunion.go
+  - /models/components/localsetworkervariablerequest.go
+  - /models/components/multiresponselocalcreatemetadatasnapshotresponse.go
+  - /models/components/multiresponselocalgetblockinforesponse.go
+  - /models/components/multiresponselocalgetnodeinforesponse.go
+  - /models/components/multiresponselocalgetnodestatisticsresponse.go
+  - /models/components/multiresponselocalgetworkerinforesponse.go
+  - /models/components/multiresponselocalgetworkervariableresponse.go
+  - /models/components/multiresponselocallaunchrepairoperationresponse.go
+  - /models/components/multiresponselocallistblockerrorsresponse.go
+  - /models/components/multiresponselocallistworkersresponse.go
+  - /models/components/multiresponselocalpurgeblocksresponse.go
+  - /models/components/multiresponselocalretryblockresyncresponse.go
+  - /models/components/multiresponselocalsetworkervariableresponse.go
+  - /models/components/nodeassignedrole.go
+  - /models/components/noderesp.go
+  - /models/components/noderolechangeunion.go
+  - /models/components/nodeupdatetrackers.go
+  - /models/components/previewclusterlayoutchangesresponseunion.go
+  - /models/components/removebucketaliasrequestunion.go
+  - /models/components/repairtypeunion.go
+  - /models/components/scrubcommand.go
+  - /models/components/security.go
+  - /models/components/updateadmintokenrequestbody.go
+  - /models/components/updatebucketrequestbody.go
+  - /models/components/updatebucketwebsiteaccess.go
+  - /models/components/updateclusterlayoutrequest.go
+  - /models/components/workerinforesp.go
+  - /models/components/workerlasterror.go
+  - /models/components/workerstaterespunion.go
+  - /models/components/zoneredundancyunion.go
+  - /models/operations/addbucketalias.go
+  - /models/operations/allowbucketkey.go
+  - /models/operations/applyclusterlayout.go
+  - /models/operations/checkdomain.go
+  - /models/operations/cleanupincompleteuploads.go
+  - /models/operations/clusterlayoutskipdeadnodes.go
+  - /models/operations/connectclusternodes.go
+  - /models/operations/createadmintoken.go
+  - /models/operations/createbucket.go
+  - /models/operations/createkey.go
+  - /models/operations/createmetadatasnapshot.go
+  - /models/operations/deleteadmintoken.go
+  - /models/operations/deletebucket.go
+  - /models/operations/deletekey.go
+  - /models/operations/denybucketkey.go
+  - /models/operations/getadmintokeninfo.go
+  - /models/operations/getblockinfo.go
+  - /models/operations/getbucketinfo.go
+  - /models/operations/getclusterhealth.go
+  - /models/operations/getclusterlayout.go
+  - /models/operations/getclusterlayouthistory.go
+  - /models/operations/getclusterstatistics.go
+  - /models/operations/getclusterstatus.go
+  - /models/operations/getcurrentadmintokeninfo.go
+  - /models/operations/getkeyinfo.go
+  - /models/operations/getnodeinfo.go
+  - /models/operations/getnodestatistics.go
+  - /models/operations/getworkerinfo.go
+  - /models/operations/getworkervariable.go
+  - /models/operations/health.go
+  - /models/operations/importkey.go
+  - /models/operations/inspectobject.go
+  - /models/operations/launchrepairoperation.go
+  - /models/operations/listadmintokens.go
+  - /models/operations/listblockerrors.go
+  - /models/operations/listbuckets.go
+  - /models/operations/listkeys.go
+  - /models/operations/listworkers.go
+  - /models/operations/metrics.go
+  - /models/operations/previewclusterlayoutchanges.go
+  - /models/operations/purgeblocks.go
+  - /models/operations/removebucketalias.go
+  - /models/operations/retryblockresync.go
+  - /models/operations/revertclusterlayout.go
+  - /models/operations/setworkervariable.go
+  - /models/operations/updateadmintoken.go
+  - /models/operations/updatebucket.go
+  - /models/operations/updateclusterlayout.go
+  - /models/operations/updatekey.go
+  - USAGE.md
+  - accesskeys.go
+  - adminapitokens.go
+  - blocks.go
+  - bucket.go
+  - bucketaliases.go
+  - buckets.go
+  - cluster.go
+  - clusterlayout.go
+  - clusters.go
+  - docs/models/components/addbucketaliasrequest1.md
+  - docs/models/components/addbucketaliasrequest2.md
+  - docs/models/components/addbucketaliasrequestunion.md
+  - docs/models/components/addbucketaliasresponse.md
+  - docs/models/components/allowbucketkeyrequest.md
+  - docs/models/components/apibucketkeyperm.md
+  - docs/models/components/apibucketquotas.md
+  - docs/models/components/applyclusterlayoutrequest.md
+  - docs/models/components/applyclusterlayoutresponse.md
+  - docs/models/components/blockerror.md
+  - docs/models/components/blockversion.md
+  - docs/models/components/blockversionbacklink1.md
+  - docs/models/components/blockversionbacklink2.md
+  - docs/models/components/blockversionbacklinkunion.md
+  - docs/models/components/bucketlocalalias.md
+  - docs/models/components/cleanupincompleteuploadsrequest.md
+  - docs/models/components/cleanupincompleteuploadsresponse.md
+  - docs/models/components/clusterlayoutskipdeadnodesrequest.md
+  - docs/models/components/clusterlayoutskipdeadnodesresponse.md
+  - docs/models/components/clusterlayoutversion.md
+  - docs/models/components/clusterlayoutversionstatus.md
+  - docs/models/components/connectnoderesponse.md
+  - docs/models/components/createadmintokenresponse.md
+  - docs/models/components/createbucketlocalalias.md
+  - docs/models/components/createbucketrequest.md
+  - docs/models/components/createkeyrequest.md
+  - docs/models/components/createkeyresponse.md
+  - docs/models/components/freespaceresp.md
+  - docs/models/components/getadmintokeninforesponse.md
+  - docs/models/components/getbucketinfokey.md
+  - docs/models/components/getbucketinfowebsiteresponse.md
+  - docs/models/components/getclusterhealthresponse.md
+  - docs/models/components/getclusterlayouthistoryresponse.md
+  - docs/models/components/getclusterlayoutresponse.md
+  - docs/models/components/getclusterstatisticsresponse.md
+  - docs/models/components/getclusterstatusresponse.md
+  - docs/models/components/httpmetadata.md
+  - docs/models/components/importkeyrequest.md
+  - docs/models/components/inspectobjectblock.md
+  - docs/models/components/inspectobjectresponse.md
+  - docs/models/components/inspectobjectversion.md
+  - docs/models/components/keyinfobucketresponse.md
+  - docs/models/components/keyperm.md
+  - docs/models/components/layoutnoderole.md
+  - docs/models/components/layoutparameters.md
+  - docs/models/components/listbucketsresponseitem.md
+  - docs/models/components/listkeysresponseitem.md
+  - docs/models/components/localgetblockinforequest.md
+  - docs/models/components/localgetworkerinforequest.md
+  - docs/models/components/localgetworkervariablerequest.md
+  - docs/models/components/locallaunchrepairoperationrequest.md
+  - docs/models/components/locallistworkersrequest.md
+  - docs/models/components/localretryblockresyncrequest1.md
+  - docs/models/components/localretryblockresyncrequest2.md
+  - docs/models/components/localretryblockresyncrequestunion.md
+  - docs/models/components/localsetworkervariablerequest.md
+  - docs/models/components/multiresponselocalcreatemetadatasnapshotresponse.md
+  - docs/models/components/multiresponselocalgetblockinforesponse.md
+  - docs/models/components/multiresponselocalgetblockinforesponsesuccess.md
+  - docs/models/components/multiresponselocalgetnodeinforesponse.md
+  - docs/models/components/multiresponselocalgetnodeinforesponsesuccess.md
+  - docs/models/components/multiresponselocalgetnodestatisticsresponse.md
+  - docs/models/components/multiresponselocalgetnodestatisticsresponsesuccess.md
+  - docs/models/components/multiresponselocalgetworkerinforesponse.md
+  - docs/models/components/multiresponselocalgetworkervariableresponse.md
+  - docs/models/components/multiresponselocallaunchrepairoperationresponse.md
+  - docs/models/components/multiresponselocallistblockerrorsresponse.md
+  - docs/models/components/multiresponselocallistworkersresponse.md
+  - docs/models/components/multiresponselocalpurgeblocksresponse.md
+  - docs/models/components/multiresponselocalpurgeblocksresponsesuccess.md
+  - docs/models/components/multiresponselocalretryblockresyncresponse.md
+  - docs/models/components/multiresponselocalretryblockresyncresponsesuccess.md
+  - docs/models/components/multiresponselocalsetworkervariableresponse.md
+  - docs/models/components/multiresponselocalsetworkervariableresponsesuccess.md
+  - docs/models/components/nodeassignedrole.md
+  - docs/models/components/noderesp.md
+  - docs/models/components/noderolechange.md
+  - docs/models/components/noderolechangenodeassignedrole.md
+  - docs/models/components/noderolechangeunion.md
+  - docs/models/components/nodeupdatetrackers.md
+  - docs/models/components/object.md
+  - docs/models/components/previewclusterlayoutchangesresponse1.md
+  - docs/models/components/previewclusterlayoutchangesresponse2.md
+  - docs/models/components/previewclusterlayoutchangesresponseunion.md
+  - docs/models/components/removebucketaliasrequest1.md
+  - docs/models/components/removebucketaliasrequest2.md
+  - docs/models/components/removebucketaliasrequestunion.md
+  - docs/models/components/repairtype.md
+  - docs/models/components/repairtypealiases.md
+  - docs/models/components/repairtypeblockrc.md
+  - docs/models/components/repairtypeblockrefs.md
+  - docs/models/components/repairtypeblocks.md
+  - docs/models/components/repairtypeclearresyncqueue.md
+  - docs/models/components/repairtypemultipartuploads.md
+  - docs/models/components/repairtyperebalance.md
+  - docs/models/components/repairtypetables.md
+  - docs/models/components/repairtypeunion.md
+  - docs/models/components/repairtypeversions.md
+  - docs/models/components/scrubcommand.md
+  - docs/models/components/security.md
+  - docs/models/components/throttled.md
+  - docs/models/components/updateadmintokenrequestbody.md
+  - docs/models/components/updatebucketrequestbody.md
+  - docs/models/components/updatebucketwebsiteaccess.md
+  - docs/models/components/updateclusterlayoutrequest.md
+  - docs/models/components/upload.md
+  - docs/models/components/workerinforesp.md
+  - docs/models/components/workerlasterror.md
+  - docs/models/components/workerstateresp.md
+  - docs/models/components/workerstaterespbusy.md
+  - docs/models/components/workerstaterespdone.md
+  - docs/models/components/workerstaterespidle.md
+  - docs/models/components/workerstaterespunion.md
+  - docs/models/components/zoneredundancy.md
+  - docs/models/components/zoneredundancyenum.md
+  - docs/models/components/zoneredundancyunion.md
+  - docs/models/operations/addbucketaliasresponse.md
+  - docs/models/operations/allowbucketkeyresponse.md
+  - docs/models/operations/applyclusterlayoutresponse.md
+  - docs/models/operations/checkdomainrequest.md
+  - docs/models/operations/checkdomainresponse.md
+  - docs/models/operations/cleanupincompleteuploadsresponse.md
+  - docs/models/operations/clusterlayoutskipdeadnodesresponse.md
+  - docs/models/operations/connectclusternodesresponse.md
+  - docs/models/operations/createadmintokenresponse.md
+  - docs/models/operations/createbucketresponse.md
+  - docs/models/operations/createkeyresponse.md
+  - docs/models/operations/createmetadatasnapshotrequest.md
+  - docs/models/operations/createmetadatasnapshotresponse.md
+  - docs/models/operations/deleteadmintokenrequest.md
+  - docs/models/operations/deleteadmintokenresponse.md
+  - docs/models/operations/deletebucketrequest.md
+  - docs/models/operations/deletebucketresponse.md
+  - docs/models/operations/deletekeyrequest.md
+  - docs/models/operations/deletekeyresponse.md
+  - docs/models/operations/denybucketkeyresponse.md
+  - docs/models/operations/getadmintokeninforequest.md
+  - docs/models/operations/getadmintokeninforesponse.md
+  - docs/models/operations/getblockinforequest.md
+  - docs/models/operations/getblockinforesponse.md
+  - docs/models/operations/getbucketinforequest.md
+  - docs/models/operations/getbucketinforesponse.md
+  - docs/models/operations/getclusterhealthresponse.md
+  - docs/models/operations/getclusterlayouthistoryresponse.md
+  - docs/models/operations/getclusterlayoutresponse.md
+  - docs/models/operations/getclusterstatisticsresponse.md
+  - docs/models/operations/getclusterstatusresponse.md
+  - docs/models/operations/getcurrentadmintokeninforesponse.md
+  - docs/models/operations/getkeyinforequest.md
+  - docs/models/operations/getkeyinforesponse.md
+  - docs/models/operations/getnodeinforequest.md
+  - docs/models/operations/getnodeinforesponse.md
+  - docs/models/operations/getnodestatisticsrequest.md
+  - docs/models/operations/getnodestatisticsresponse.md
+  - docs/models/operations/getworkerinforequest.md
+  - docs/models/operations/getworkerinforesponse.md
+  - docs/models/operations/getworkervariablerequest.md
+  - docs/models/operations/getworkervariableresponse.md
+  - docs/models/operations/healthresponse.md
+  - docs/models/operations/importkeyresponse.md
+  - docs/models/operations/inspectobjectrequest.md
+  - docs/models/operations/inspectobjectresponse.md
+  - docs/models/operations/launchrepairoperationrequest.md
+  - docs/models/operations/launchrepairoperationresponse.md
+  - docs/models/operations/listadmintokensresponse.md
+  - docs/models/operations/listblockerrorsrequest.md
+  - docs/models/operations/listblockerrorsresponse.md
+  - docs/models/operations/listbucketsresponse.md
+  - docs/models/operations/listkeysresponse.md
+  - docs/models/operations/listworkersrequest.md
+  - docs/models/operations/listworkersresponse.md
+  - docs/models/operations/metricsresponse.md
+  - docs/models/operations/metricssecurity.md
+  - docs/models/operations/option.md
+  - docs/models/operations/previewclusterlayoutchangesresponse.md
+  - docs/models/operations/purgeblocksrequest.md
+  - docs/models/operations/purgeblocksresponse.md
+  - docs/models/operations/removebucketaliasresponse.md
+  - docs/models/operations/retryblockresyncrequest.md
+  - docs/models/operations/retryblockresyncresponse.md
+  - docs/models/operations/revertclusterlayoutresponse.md
+  - docs/models/operations/setworkervariablerequest.md
+  - docs/models/operations/setworkervariableresponse.md
+  - docs/models/operations/updateadmintokenrequest.md
+  - docs/models/operations/updateadmintokenresponse.md
+  - docs/models/operations/updatebucketrequest.md
+  - docs/models/operations/updatebucketresponse.md
+  - docs/models/operations/updateclusterlayoutresponse.md
+  - docs/models/operations/updatekeyrequest.md
+  - docs/models/operations/updatekeyresponse.md
+  - docs/sdks/accesskeys/README.md
+  - docs/sdks/adminapitokens/README.md
+  - docs/sdks/blocks/README.md
+  - docs/sdks/bucket/README.md
+  - docs/sdks/bucketaliases/README.md
+  - docs/sdks/buckets/README.md
+  - docs/sdks/cluster/README.md
+  - docs/sdks/clusterlayout/README.md
+  - docs/sdks/clusters/README.md
+  - docs/sdks/nodes/README.md
+  - docs/sdks/permissions/README.md
+  - docs/sdks/specialendpoints/README.md
+  - docs/sdks/workers/README.md
+  - garage.go
+  - go.mod
+  - internal/config/sdkconfiguration.go
+  - internal/hooks/hooks.go
+  - internal/utils/contenttype.go
+  - internal/utils/env.go
+  - internal/utils/form.go
+  - internal/utils/headers.go
+  - internal/utils/json.go
+  - internal/utils/pathparams.go
+  - internal/utils/queryparams.go
+  - internal/utils/requestbody.go
+  - internal/utils/retries.go
+  - internal/utils/security.go
+  - internal/utils/utils.go
+  - models/apierrors/apierror.go
+  - models/operations/options.go
+  - nodes.go
+  - optionalnullable/optionalnullable.go
+  - optionalnullable/optionalnullable_test.go
+  - permissions.go
+  - retry/config.go
+  - specialendpoints.go
+  - types/bigint.go
+  - types/date.go
+  - types/datetime.go
+  - types/pointers.go
+  - workers.go
+examples:
+  CheckDomain:
+    speakeasy-default-check-domain:
+      parameters:
+        query:
+          domain: "outlandish-forager.org"
+  Health: {}
+  Metrics: {}
+  AddBucketAlias:
+    speakeasy-default-add-bucket-alias:
+      requestBody:
+        application/json: {"accessKeyId": "<id>", "localAlias": "<value>", "bucketId": "<id>"}
+      responses:
+        "200":
+          application/json: {"bytes": 687888, "created": "2025-01-26T11:57:10.609Z", "globalAliases": [], "id": "<id>", "keys": [{"accessKeyId": "<id>", "bucketLocalAliases": ["<value 1>", "<value 2>", "<value 3>"], "name": "<value>", "permissions": {}}], "objects": 76035, "quotas": {}, "unfinishedMultipartUploadBytes": 333007, "unfinishedMultipartUploadParts": 245101, "unfinishedMultipartUploads": 352530, "unfinishedUploads": 99129, "websiteAccess": true}
+  RemoveBucketAlias:
+    speakeasy-default-remove-bucket-alias:
+      requestBody:
+        application/json: {"globalAlias": "<value>", "bucketId": "<id>"}
+      responses:
+        "200":
+          application/json: {"bytes": 388644, "created": "2025-02-27T21:27:49.678Z", "globalAliases": ["<value 1>", "<value 2>"], "id": "<id>", "keys": [], "objects": 378906, "quotas": {}, "unfinishedMultipartUploadBytes": 621799, "unfinishedMultipartUploadParts": 472840, "unfinishedMultipartUploads": 552670, "unfinishedUploads": 937584, "websiteAccess": false}
+  AllowBucketKey:
+    speakeasy-default-allow-bucket-key:
+      requestBody:
+        application/json: {"accessKeyId": "<id>", "bucketId": "<id>", "permissions": {}}
+      responses:
+        "200":
+          application/json: {"bytes": 74195, "created": "2024-08-06T15:37:27.859Z", "globalAliases": ["<value 1>", "<value 2>"], "id": "<id>", "keys": [], "objects": 702883, "quotas": {}, "unfinishedMultipartUploadBytes": 639002, "unfinishedMultipartUploadParts": 452141, "unfinishedMultipartUploads": 856790, "unfinishedUploads": 632946, "websiteAccess": true}
+  DenyBucketKey:
+    speakeasy-default-deny-bucket-key:
+      requestBody:
+        application/json: {"accessKeyId": "<id>", "bucketId": "<id>", "permissions": {}}
+      responses:
+        "200":
+          application/json: {"bytes": 316315, "created": "2023-09-09T07:02:44.751Z", "globalAliases": ["<value 1>"], "id": "<id>", "keys": [], "objects": 145266, "quotas": {}, "unfinishedMultipartUploadBytes": 209964, "unfinishedMultipartUploadParts": 736950, "unfinishedMultipartUploads": 854969, "unfinishedUploads": 466247, "websiteAccess": false}
+  ApplyClusterLayout:
+    speakeasy-default-apply-cluster-layout:
+      requestBody:
+        application/json: {"version": 985543}
+      responses:
+        "200":
+          application/json: {"layout": {"parameters": {"zoneRedundancy": "maximum"}, "partitionSize": 680418, "roles": [], "stagedRoleChanges": [{"remove": true, "id": "<id>"}], "version": 719573}, "message": ["<value 1>"]}
+  ClusterLayoutSkipDeadNodes:
+    speakeasy-default-cluster-layout-skip-dead-nodes:
+      requestBody:
+        application/json: {"allowMissingData": false, "version": 530642}
+      responses:
+        "200":
+          application/json: {"ackUpdated": ["<value 1>", "<value 2>", "<value 3>"], "syncUpdated": ["<value 1>"]}
+  GetClusterLayout:
+    speakeasy-default-get-cluster-layout:
+      responses:
+        "200":
+          application/json: {"parameters": {"zoneRedundancy": "maximum"}, "partitionSize": 591492, "roles": [], "stagedRoleChanges": [], "version": 248109}
+  GetClusterLayoutHistory:
+    speakeasy-default-get-cluster-layout-history:
+      responses:
+        "200":
+          application/json: {"currentVersion": 36802, "minAck": 325524, "versions": []}
+  PreviewClusterLayoutChanges:
+    speakeasy-default-preview-cluster-layout-changes:
+      responses:
+        "200":
+          application/json: {"message": ["<value 1>", "<value 2>", "<value 3>"], "newLayout": {"parameters": {"zoneRedundancy": {"atLeast": 484073}}, "partitionSize": 567698, "roles": [{"id": "<id>", "tags": ["<value 1>", "<value 2>"], "zone": "<value>"}], "stagedRoleChanges": [], "version": 119853}}
+  RevertClusterLayout:
+    speakeasy-default-revert-cluster-layout:
+      responses:
+        "200":
+          application/json: {"parameters": {"zoneRedundancy": "maximum"}, "partitionSize": 344646, "roles": [], "stagedRoleChanges": [], "version": 357323}
+  UpdateClusterLayout:
+    speakeasy-default-update-cluster-layout:
+      requestBody:
+        application/json: {}
+      responses:
+        "200":
+          application/json: {"parameters": {"zoneRedundancy": {"atLeast": 154401}}, "partitionSize": 524402, "roles": [], "stagedRoleChanges": [{"tags": ["<value 1>", "<value 2>"], "zone": "<value>", "id": "<id>"}], "version": 335473}
+  CleanupIncompleteUploads:
+    speakeasy-default-cleanup-incomplete-uploads:
+      requestBody:
+        application/json: {"bucketId": "<id>", "olderThanSecs": 663838}
+      responses:
+        "200":
+          application/json: {"uploadsDeleted": 690579}
+  CreateBucket:
+    speakeasy-default-create-bucket:
+      requestBody:
+        application/json: {}
+      responses:
+        "200":
+          application/json: {"bytes": 195187, "created": "2025-05-22T00:30:09.332Z", "globalAliases": ["<value 1>", "<value 2>"], "id": "<id>", "keys": [], "objects": 149559, "quotas": {}, "unfinishedMultipartUploadBytes": 788980, "unfinishedMultipartUploadParts": 332293, "unfinishedMultipartUploads": 961729, "unfinishedUploads": 295801, "websiteAccess": true}
+  DeleteBucket:
+    speakeasy-default-delete-bucket:
+      parameters:
+        query:
+          id: "<id>"
+  GetBucketInfo:
+    speakeasy-default-get-bucket-info:
+      responses:
+        "200":
+          application/json: {"bytes": 508663, "created": "2025-10-02T16:40:31.403Z", "globalAliases": ["<value 1>", "<value 2>", "<value 3>"], "id": "<id>", "keys": [], "objects": 46400, "quotas": {}, "unfinishedMultipartUploadBytes": 286991, "unfinishedMultipartUploadParts": 604319, "unfinishedMultipartUploads": 208414, "unfinishedUploads": 915706, "websiteAccess": true}
+  InspectObject:
+    speakeasy-default-inspect-object:
+      parameters:
+        query:
+          bucketId: "<id>"
+          key: "<key>"
+      responses:
+        "200":
+          application/json: {"bucketId": "<id>", "key": "<key>", "versions": []}
+  ListBuckets:
+    speakeasy-default-list-buckets:
+      responses:
+        "200":
+          application/json: [{"created": "2025-11-27T04:55:53.640Z", "globalAliases": ["<value 1>", "<value 2>", "<value 3>"], "id": "<id>", "localAliases": []}]
+  UpdateBucket:
+    speakeasy-default-update-bucket:
+      parameters:
+        query:
+          id: "<id>"
+      requestBody:
+        application/json: {}
+      responses:
+        "200":
+          application/json: {"bytes": 951139, "created": "2025-02-20T09:38:01.446Z", "globalAliases": [], "id": "<id>", "keys": [], "objects": 745594, "quotas": {}, "unfinishedMultipartUploadBytes": 710748, "unfinishedMultipartUploadParts": 674125, "unfinishedMultipartUploads": 158177, "unfinishedUploads": 277809, "websiteAccess": false}
+  ConnectClusterNodes:
+    speakeasy-default-connect-cluster-nodes:
+      requestBody:
+        application/json: ["<value 1>", "<value 2>", "<value 3>"]
+      responses:
+        "200":
+          application/json: [{"success": false}]
+  GetClusterHealth:
+    speakeasy-default-get-cluster-health:
+      responses:
+        "200":
+          application/json: {"connectedNodes": 756955, "knownNodes": 304870, "partitions": 23279, "partitionsAllOk": 366192, "partitionsQuorum": 698124, "status": "<value>", "storageNodes": 385932, "storageNodesUp": 100588}
+  GetClusterStatistics:
+    speakeasy-default-get-cluster-statistics:
+      responses:
+        "200":
+          application/json: {"freeform": "<value>"}
+  GetClusterStatus:
+    speakeasy-default-get-cluster-status:
+      responses:
+        "200":
+          application/json: {"layoutVersion": 367101, "nodes": [{"draining": true, "id": "<id>", "isUp": true}]}
+  CreateAdminToken:
+    speakeasy-default-create-admin-token:
+      requestBody:
+        application/json: {}
+      responses:
+        "200":
+          application/json: {"expired": true, "name": "<value>", "scope": ["<value 1>", "<value 2>"], "secretToken": "<value>"}
+  DeleteAdminToken:
+    speakeasy-default-delete-admin-token:
+      parameters:
+        query:
+          id: "<id>"
+  GetAdminTokenInfo:
+    speakeasy-default-get-admin-token-info:
+      responses:
+        "200":
+          application/json: {"expired": false, "name": "<value>", "scope": []}
+  GetCurrentAdminTokenInfo:
+    speakeasy-default-get-current-admin-token-info:
+      responses:
+        "200":
+          application/json: {"expired": false, "name": "<value>", "scope": ["<value 1>"]}
+  ListAdminTokens:
+    speakeasy-default-list-admin-tokens:
+      responses:
+        "200":
+          application/json: [{"expired": true, "name": "<value>", "scope": ["<value 1>", "<value 2>", "<value 3>"]}]
+  UpdateAdminToken:
+    speakeasy-default-update-admin-token:
+      parameters:
+        query:
+          id: "<id>"
+      requestBody:
+        application/json: {}
+      responses:
+        "200":
+          application/json: {"expired": true, "name": "<value>", "scope": ["<value 1>"]}
+  CreateKey:
+    speakeasy-default-create-key:
+      requestBody:
+        application/json: {}
+      responses:
+        "200":
+          application/json: {"accessKeyId": "<id>", "buckets": [], "expired": true, "name": "<value>", "permissions": {}}
+  DeleteKey:
+    speakeasy-default-delete-key:
+      parameters:
+        query:
+          id: "<id>"
+  GetKeyInfo:
+    speakeasy-default-get-key-info:
+      responses:
+        "200":
+          application/json: {"accessKeyId": "<id>", "buckets": [], "expired": true, "name": "<value>", "permissions": {}}
+  ImportKey:
+    speakeasy-default-import-key:
+      requestBody:
+        application/json: {"accessKeyId": "<id>", "secretAccessKey": "<value>"}
+      responses:
+        "200":
+          application/json: {"accessKeyId": "<id>", "buckets": [{"globalAliases": [], "id": "<id>", "localAliases": [], "permissions": {}}], "expired": true, "name": "<value>", "permissions": {}}
+  ListKeys:
+    speakeasy-default-list-keys:
+      responses:
+        "200":
+          application/json: [{"expired": false, "id": "<id>", "name": "<value>"}]
+  UpdateKey:
+    speakeasy-default-update-key:
+      parameters:
+        query:
+          id: "<id>"
+      requestBody:
+        application/json: {}
+      responses:
+        "200":
+          application/json: {"accessKeyId": "<id>", "buckets": [], "expired": true, "name": "<value>", "permissions": {}}
+  CreateMetadataSnapshot:
+    speakeasy-default-create-metadata-snapshot:
+      parameters:
+        query:
+          node: "<value>"
+      responses:
+        "200":
+          application/json: {"error": {"key": "<value>"}, "success": {"key": "<value>"}}
+  GetNodeInfo:
+    speakeasy-default-get-node-info:
+      parameters:
+        query:
+          node: "<value>"
+      responses:
+        "200":
+          application/json: {"error": {"key": "<value>"}, "success": {"key": {"dbEngine": "<value>", "garageVersion": "<value>", "nodeId": "<id>", "rustVersion": "<value>"}}}
+  GetNodeStatistics:
+    speakeasy-default-get-node-statistics:
+      parameters:
+        query:
+          node: "<value>"
+      responses:
+        "200":
+          application/json: {"error": {}, "success": {"key": {"freeform": "<value>"}}}
+  LaunchRepairOperation:
+    speakeasy-default-launch-repair-operation:
+      parameters:
+        query:
+          node: "<value>"
+      requestBody:
+        application/json: {"repairType": "tables"}
+      responses:
+        "200":
+          application/json: {"error": {"key": "<value>", "key1": "<value>"}, "success": {"key": "<value>", "key1": "<value>", "key2": "<value>"}}
+  GetBlockInfo:
+    speakeasy-default-get-block-info:
+      parameters:
+        query:
+          node: "<value>"
+      requestBody:
+        application/json: {"blockHash": "<value>"}
+      responses:
+        "200":
+          application/json: {"error": {"key": "<value>", "key1": "<value>", "key2": "<value>"}, "success": {}}
+  ListBlockErrors:
+    speakeasy-default-list-block-errors:
+      parameters:
+        query:
+          node: "<value>"
+      responses:
+        "200":
+          application/json: {"error": {"key": "<value>", "key1": "<value>"}, "success": {"key": [], "key1": [{"blockHash": "<value>", "errorCount": 22746, "lastTrySecsAgo": 719994, "nextTryInSecs": 295259, "refcount": 370780}], "key2": []}}
+  PurgeBlocks:
+    speakeasy-default-purge-blocks:
+      parameters:
+        query:
+          node: "<value>"
+      requestBody:
+        application/json: []
+      responses:
+        "200":
+          application/json: {"error": {"key": "<value>"}, "success": {"key": {"blockRefsPurged": 879719, "blocksPurged": 228473, "objectsDeleted": 96893, "uploadsDeleted": 767568, "versionsDeleted": 385516}}}
+  RetryBlockResync:
+    speakeasy-default-retry-block-resync:
+      parameters:
+        query:
+          node: "<value>"
+      requestBody:
+        application/json: {"all": false}
+      responses:
+        "200":
+          application/json: {"error": {"key": "<value>"}, "success": {}}
+  GetWorkerInfo:
+    speakeasy-default-get-worker-info:
+      parameters:
+        query:
+          node: "<value>"
+      requestBody:
+        application/json: {"id": 847670}
+      responses:
+        "200":
+          application/json: {"error": {}, "success": {}}
+  GetWorkerVariable:
+    speakeasy-default-get-worker-variable:
+      parameters:
+        query:
+          node: "<value>"
+      requestBody:
+        application/json: {}
+      responses:
+        "200":
+          application/json: {"error": {"key": "<value>", "key1": "<value>"}, "success": {"key": {"key": "<value>", "key1": "<value>", "key2": "<value>"}, "key1": {"key": "<value>", "key1": "<value>", "key2": "<value>"}, "key2": {}}}
+  ListWorkers:
+    speakeasy-default-list-workers:
+      parameters:
+        query:
+          node: "<value>"
+      requestBody:
+        application/json: {}
+      responses:
+        "200":
+          application/json: {"error": {"key": "<value>", "key1": "<value>"}, "success": {"key": [], "key1": [{"consecutiveErrors": 398007, "errors": 858481, "freeform": [], "id": 631900, "name": "<value>", "state": "done"}]}}
+  SetWorkerVariable:
+    speakeasy-default-set-worker-variable:
+      parameters:
+        query:
+          node: "<value>"
+      requestBody:
+        application/json: {"value": "<value>", "variable": "<value>"}
+      responses:
+        "200":
+          application/json: {"error": {"key": "<value>", "key1": "<value>"}, "success": {"key": {"value": "<value>", "variable": "<value>"}}}
+examplesVersion: 1.0.2

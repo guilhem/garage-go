@@ -1,0 +1,9 @@
+# ListWorkersResponse
+
+
+## Fields
+
+| Field                                                                                                                 | Type                                                                                                                  | Required                                                                                                              | Description                                                                                                           |
+| --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| `HTTPMeta`                                                                                                            | [components.HTTPMetadata](../../models/components/httpmetadata.md)                                                    | :heavy_check_mark:                                                                                                    | N/A                                                                                                                   |
+| `MultiResponseLocalListWorkersResponse`                                                                               | [*components.MultiResponseLocalListWorkersResponse](../../models/components/multiresponselocallistworkersresponse.md) | :heavy_minus_sign:                                                                                                    | Responses from individual cluster nodes                                                                               |

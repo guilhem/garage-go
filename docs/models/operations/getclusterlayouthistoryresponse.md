@@ -1,0 +1,9 @@
+# GetClusterLayoutHistoryResponse
+
+
+## Fields
+
+| Field                                                                                                     | Type                                                                                                      | Required                                                                                                  | Description                                                                                               |
+| --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| `HTTPMeta`                                                                                                | [components.HTTPMetadata](../../models/components/httpmetadata.md)                                        | :heavy_check_mark:                                                                                        | N/A                                                                                                       |
+| `GetClusterLayoutHistoryResponse`                                                                         | [*components.GetClusterLayoutHistoryResponse](../../models/components/getclusterlayouthistoryresponse.md) | :heavy_minus_sign:                                                                                        | Cluster layout history                                                                                    |

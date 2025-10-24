@@ -1,0 +1,488 @@
+overlay: 1.0.0
+x-speakeasy-jsonpath: rfc9535
+info:
+  title: Speakeasy Modifications
+  version: 0.0.2
+  x-speakeasy-metadata:
+    after: ""
+    before: ""
+    type: speakeasy-modifications
+actions:
+  - target: $["paths"]["/v2/DeleteBucket"]["post"]
+    update:
+      x-speakeasy-group: buckets
+      x-speakeasy-name-override: delete
+    x-speakeasy-metadata:
+      after: sdk.buckets.delete()
+      before: sdk.Bucket.DeleteBucket()
+      created_at: 1761325117832
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/metrics"]["get"]
+    update:
+      x-speakeasy-group: specialEndpoints
+    x-speakeasy-metadata:
+      after: sdk.specialEndpoints.metrics()
+      before: sdk.Special endpoints.Metrics()
+      created_at: 1761325117832
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/v2/DeleteKey"]["post"]
+    update:
+      x-speakeasy-group: accessKeys
+      x-speakeasy-name-override: delete
+    x-speakeasy-metadata:
+      after: sdk.accessKeys.delete()
+      before: sdk.Access key.DeleteKey()
+      created_at: 1761325117832
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/v2/GetWorkerVariable"]["post"]
+    update:
+      x-speakeasy-group: workers
+      x-speakeasy-name-override: getVariable
+    x-speakeasy-metadata:
+      after: sdk.workers.getVariable()
+      before: sdk.Worker.GetWorkerVariable()
+      created_at: 1761325117832
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/v2/ClusterLayoutSkipDeadNodes"]["post"]
+    update:
+      x-speakeasy-group: clusterLayout
+      x-speakeasy-name-override: skipDeadNodes
+    x-speakeasy-metadata:
+      after: sdk.clusterLayout.skipDeadNodes()
+      before: sdk.Cluster layout.ClusterLayoutSkipDeadNodes()
+      created_at: 1761325117832
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/v2/GetWorkerInfo"]["post"]
+    update:
+      x-speakeasy-group: workers
+      x-speakeasy-name-override: getInfo
+    x-speakeasy-metadata:
+      after: sdk.workers.getInfo()
+      before: sdk.Worker.GetWorkerInfo()
+      created_at: 1761325117832
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/v2/UpdateBucket"]["post"]
+    update:
+      x-speakeasy-group: buckets
+      x-speakeasy-name-override: update
+    x-speakeasy-metadata:
+      after: sdk.buckets.update()
+      before: sdk.Bucket.UpdateBucket()
+      created_at: 1761325117832
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/v2/RemoveBucketAlias"]["post"]
+    update:
+      x-speakeasy-group: bucketAliases
+      x-speakeasy-name-override: remove
+    x-speakeasy-metadata:
+      after: sdk.bucketAliases.remove()
+      before: sdk.Bucket alias.RemoveBucketAlias()
+      created_at: 1761325117832
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/v2/CleanupIncompleteUploads"]["post"]
+    update:
+      x-speakeasy-group: buckets
+    x-speakeasy-metadata:
+      after: sdk.buckets.cleanupIncompleteUploads()
+      before: sdk.Bucket.CleanupIncompleteUploads()
+      created_at: 1761325117832
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/v2/ListBlockErrors"]["get"]
+    update:
+      x-speakeasy-group: blocks
+      x-speakeasy-name-override: listErrors
+    x-speakeasy-metadata:
+      after: sdk.blocks.listErrors()
+      before: sdk.Block.ListBlockErrors()
+      created_at: 1761325117832
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/v2/AllowBucketKey"]["post"]
+    update:
+      x-speakeasy-group: permissions
+    x-speakeasy-metadata:
+      after: sdk.permissions.allowBucketKey()
+      before: sdk.Permission.AllowBucketKey()
+      created_at: 1761325117832
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/v2/GetClusterLayoutHistory"]["get"]
+    update:
+      x-speakeasy-group: clusterLayout
+      x-speakeasy-name-override: getHistory
+    x-speakeasy-metadata:
+      after: sdk.clusterLayout.getHistory()
+      before: sdk.Cluster layout.GetClusterLayoutHistory()
+      created_at: 1761325117832
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/v2/GetClusterStatistics"]["get"]
+    update:
+      x-speakeasy-group: clusters
+      x-speakeasy-name-override: getStatistics
+    x-speakeasy-metadata:
+      after: sdk.clusters.getStatistics()
+      before: sdk.Cluster.GetClusterStatistics()
+      created_at: 1761325117832
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/v2/ApplyClusterLayout"]["post"]
+    update:
+      x-speakeasy-group: clusterLayout
+      x-speakeasy-name-override: apply
+    x-speakeasy-metadata:
+      after: sdk.clusterLayout.apply()
+      before: sdk.Cluster layout.ApplyClusterLayout()
+      created_at: 1761325117832
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/v2/GetKeyInfo"]["get"]
+    update:
+      x-speakeasy-group: accessKeys
+      x-speakeasy-name-override: getInfo
+    x-speakeasy-metadata:
+      after: sdk.accessKeys.getInfo()
+      before: sdk.Access key.GetKeyInfo()
+      created_at: 1761325117832
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/v2/ListAdminTokens"]["get"]
+    update:
+      x-speakeasy-group: adminApiTokens
+      x-speakeasy-name-override: list
+    x-speakeasy-metadata:
+      after: sdk.adminApiTokens.list()
+      before: sdk.Admin API token.ListAdminTokens()
+      created_at: 1761325117832
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/v2/AddBucketAlias"]["post"]
+    update:
+      x-speakeasy-group: bucketAliases
+      x-speakeasy-name-override: add
+    x-speakeasy-metadata:
+      after: sdk.bucketAliases.add()
+      before: sdk.Bucket alias.AddBucketAlias()
+      created_at: 1761325117832
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/v2/GetBucketInfo"]["get"]
+    update:
+      x-speakeasy-name-override: getInfo
+    x-speakeasy-metadata:
+      after: sdk.bucket.getInfo()
+      before: sdk.Bucket.GetBucketInfo()
+      created_at: 1761325117832
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/v2/PreviewClusterLayoutChanges"]["post"]
+    update:
+      x-speakeasy-group: clusterLayout
+      x-speakeasy-name-override: previewChanges
+    x-speakeasy-metadata:
+      after: sdk.clusterLayout.previewChanges()
+      before: sdk.Cluster layout.PreviewClusterLayoutChanges()
+      created_at: 1761325117832
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/v2/CreateKey"]["post"]
+    update:
+      x-speakeasy-group: accessKeys
+      x-speakeasy-name-override: create
+    x-speakeasy-metadata:
+      after: sdk.accessKeys.create()
+      before: sdk.Access key.CreateKey()
+      created_at: 1761325117832
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/v2/DeleteAdminToken"]["post"]
+    update:
+      x-speakeasy-group: adminApiTokens
+      x-speakeasy-name-override: delete
+    x-speakeasy-metadata:
+      after: sdk.adminApiTokens.delete()
+      before: sdk.Admin API token.DeleteAdminToken()
+      created_at: 1761325117832
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/v2/ConnectClusterNodes"]["post"]
+    update:
+      x-speakeasy-group: clusters
+      x-speakeasy-name-override: connectNodes
+    x-speakeasy-metadata:
+      after: sdk.clusters.connectNodes()
+      before: sdk.Cluster.ConnectClusterNodes()
+      created_at: 1761325117832
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/v2/ListWorkers"]["post"]
+    update:
+      x-speakeasy-group: workers
+      x-speakeasy-name-override: list
+    x-speakeasy-metadata:
+      after: sdk.workers.list()
+      before: sdk.Worker.ListWorkers()
+      created_at: 1761325117832
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/v2/UpdateClusterLayout"]["post"]
+    update:
+      x-speakeasy-group: clusterLayout
+      x-speakeasy-name-override: update
+    x-speakeasy-metadata:
+      after: sdk.clusterLayout.update()
+      before: sdk.Cluster layout.UpdateClusterLayout()
+      created_at: 1761325117832
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/v2/DenyBucketKey"]["post"]
+    update:
+      x-speakeasy-group: permissions
+    x-speakeasy-metadata:
+      after: sdk.permissions.denyBucketKey()
+      before: sdk.Permission.DenyBucketKey()
+      created_at: 1761325117832
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/v2/ListKeys"]["get"]
+    update:
+      x-speakeasy-group: accessKeys
+      x-speakeasy-name-override: list
+    x-speakeasy-metadata:
+      after: sdk.accessKeys.list()
+      before: sdk.Access key.ListKeys()
+      created_at: 1761325117832
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/v2/ImportKey"]["post"]
+    update:
+      x-speakeasy-group: accessKeys
+      x-speakeasy-name-override: import
+    x-speakeasy-metadata:
+      after: sdk.accessKeys.import()
+      before: sdk.Access key.ImportKey()
+      created_at: 1761325117832
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/v2/GetCurrentAdminTokenInfo"]["get"]
+    update:
+      x-speakeasy-group: adminApiTokens
+      x-speakeasy-name-override: getCurrentInfo
+    x-speakeasy-metadata:
+      after: sdk.adminApiTokens.getCurrentInfo()
+      before: sdk.Admin API token.GetCurrentAdminTokenInfo()
+      created_at: 1761325117832
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/v2/GetBlockInfo"]["post"]
+    update:
+      x-speakeasy-group: blocks
+      x-speakeasy-name-override: getInfo
+    x-speakeasy-metadata:
+      after: sdk.blocks.getInfo()
+      before: sdk.Block.GetBlockInfo()
+      created_at: 1761325117832
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/v2/GetNodeStatistics"]["get"]
+    update:
+      x-speakeasy-group: nodes
+      x-speakeasy-name-override: getStatistics
+    x-speakeasy-metadata:
+      after: sdk.nodes.getStatistics()
+      before: sdk.Node.GetNodeStatistics()
+      created_at: 1761325117832
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/v2/CreateBucket"]["post"]
+    update:
+      x-speakeasy-group: buckets
+      x-speakeasy-name-override: create
+    x-speakeasy-metadata:
+      after: sdk.buckets.create()
+      before: sdk.Bucket.CreateBucket()
+      created_at: 1761325117832
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/v2/UpdateKey"]["post"]
+    update:
+      x-speakeasy-group: accessKeys
+      x-speakeasy-name-override: update
+    x-speakeasy-metadata:
+      after: sdk.accessKeys.update()
+      before: sdk.Access key.UpdateKey()
+      created_at: 1761325117832
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/v2/GetNodeInfo"]["get"]
+    update:
+      x-speakeasy-group: nodes
+      x-speakeasy-name-override: getInfo
+    x-speakeasy-metadata:
+      after: sdk.nodes.getInfo()
+      before: sdk.Node.GetNodeInfo()
+      created_at: 1761325117832
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/v2/ListBuckets"]["get"]
+    update:
+      x-speakeasy-group: buckets
+      x-speakeasy-name-override: list
+    x-speakeasy-metadata:
+      after: sdk.buckets.list()
+      before: sdk.Bucket.ListBuckets()
+      created_at: 1761325117832
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/v2/PurgeBlocks"]["post"]
+    update:
+      x-speakeasy-group: blocks
+      x-speakeasy-name-override: purge
+    x-speakeasy-metadata:
+      after: sdk.blocks.purge()
+      before: sdk.Block.PurgeBlocks()
+      created_at: 1761325117832
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/v2/GetClusterStatus"]["get"]
+    update:
+      x-speakeasy-name-override: getStatus
+    x-speakeasy-metadata:
+      after: sdk.cluster.getStatus()
+      before: sdk.Cluster.GetClusterStatus()
+      created_at: 1761325117832
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/v2/GetClusterLayout"]["get"]
+    update:
+      x-speakeasy-group: clusterLayout
+      x-speakeasy-name-override: get
+    x-speakeasy-metadata:
+      after: sdk.clusterLayout.get()
+      before: sdk.Cluster layout.GetClusterLayout()
+      created_at: 1761325117832
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/check"]["get"]
+    update:
+      x-speakeasy-group: specialEndpoints
+    x-speakeasy-metadata:
+      after: sdk.specialEndpoints.checkDomain()
+      before: sdk.Special endpoints.CheckDomain()
+      created_at: 1761325117833
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/v2/InspectObject"]["get"]
+    update:
+      x-speakeasy-group: buckets
+    x-speakeasy-metadata:
+      after: sdk.buckets.inspectObject()
+      before: sdk.Bucket.InspectObject()
+      created_at: 1761325117833
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/v2/RevertClusterLayout"]["post"]
+    update:
+      x-speakeasy-group: clusterLayout
+      x-speakeasy-name-override: revert
+    x-speakeasy-metadata:
+      after: sdk.clusterLayout.revert()
+      before: sdk.Cluster layout.RevertClusterLayout()
+      created_at: 1761325117833
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/v2/CreateAdminToken"]["post"]
+    update:
+      x-speakeasy-group: adminApiTokens
+      x-speakeasy-name-override: create
+    x-speakeasy-metadata:
+      after: sdk.adminApiTokens.create()
+      before: sdk.Admin API token.CreateAdminToken()
+      created_at: 1761325117833
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/v2/LaunchRepairOperation"]["post"]
+    update:
+      x-speakeasy-group: nodes
+    x-speakeasy-metadata:
+      after: sdk.nodes.launchRepairOperation()
+      before: sdk.Node.LaunchRepairOperation()
+      created_at: 1761325117833
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/v2/GetAdminTokenInfo"]["get"]
+    update:
+      x-speakeasy-group: adminApiTokens
+      x-speakeasy-name-override: getInfo
+    x-speakeasy-metadata:
+      after: sdk.adminApiTokens.getInfo()
+      before: sdk.Admin API token.GetAdminTokenInfo()
+      created_at: 1761325117833
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/v2/CreateMetadataSnapshot"]["post"]
+    update:
+      x-speakeasy-group: nodes
+    x-speakeasy-metadata:
+      after: sdk.nodes.createMetadataSnapshot()
+      before: sdk.Node.CreateMetadataSnapshot()
+      created_at: 1761325117833
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/v2/GetClusterHealth"]["get"]
+    update:
+      x-speakeasy-name-override: getHealth
+    x-speakeasy-metadata:
+      after: sdk.cluster.getHealth()
+      before: sdk.Cluster.GetClusterHealth()
+      created_at: 1761325117833
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/v2/RetryBlockResync"]["post"]
+    update:
+      x-speakeasy-group: blocks
+      x-speakeasy-name-override: retryResync
+    x-speakeasy-metadata:
+      after: sdk.blocks.retryResync()
+      before: sdk.Block.RetryBlockResync()
+      created_at: 1761325117833
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/health"]["get"]
+    update:
+      x-speakeasy-group: specialEndpoints
+    x-speakeasy-metadata:
+      after: sdk.specialEndpoints.health()
+      before: sdk.Special endpoints.Health()
+      created_at: 1761325117833
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/v2/UpdateAdminToken"]["post"]
+    update:
+      x-speakeasy-group: adminApiTokens
+      x-speakeasy-name-override: update
+    x-speakeasy-metadata:
+      after: sdk.adminApiTokens.update()
+      before: sdk.Admin API token.UpdateAdminToken()
+      created_at: 1761325117833
+      reviewed_at: 1761325130013
+      type: method-name
+  - target: $["paths"]["/v2/SetWorkerVariable"]["post"]
+    update:
+      x-speakeasy-group: workers
+      x-speakeasy-name-override: setVariable
+    x-speakeasy-metadata:
+      after: sdk.workers.setVariable()
+      before: sdk.Worker.SetWorkerVariable()
+      created_at: 1761325117833
+      reviewed_at: 1761325130013
+      type: method-name
