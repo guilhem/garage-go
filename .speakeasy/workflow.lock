@@ -1,20 +1,21 @@
-speakeasyVersion: 1.639.3
+speakeasyVersion: 1.650.0
 sources:
     Garage administration API:
         sourceNamespace: garage-administration-api
-        sourceRevisionDigest: sha256:7672e6e1b841d56148a915308c6dcaab08acb004c1cb81eba48d8c6ab1550a7c
-        sourceBlobDigest: sha256:568e458affc86a5c87ce712ea0acd44e2fd82dfd9a5441472911d14ae2b3d87b
+        sourceRevisionDigest: sha256:1f7f85000a065370d430068d0f836a94032b5e20f15dc2a3d24319195c175f8b
+        sourceBlobDigest: sha256:3bcfd0f940ad73d5361c359b6d9da15188dce15e482842c4395f18f86280f7c7
         tags:
             - latest
+            - speakeasy-sdk-regen-1761326278
             - v2.1.0
 targets:
     garage:
         source: Garage administration API
         sourceNamespace: garage-administration-api
-        sourceRevisionDigest: sha256:7672e6e1b841d56148a915308c6dcaab08acb004c1cb81eba48d8c6ab1550a7c
-        sourceBlobDigest: sha256:568e458affc86a5c87ce712ea0acd44e2fd82dfd9a5441472911d14ae2b3d87b
+        sourceRevisionDigest: sha256:1f7f85000a065370d430068d0f836a94032b5e20f15dc2a3d24319195c175f8b
+        sourceBlobDigest: sha256:3bcfd0f940ad73d5361c359b6d9da15188dce15e482842c4395f18f86280f7c7
         codeSamplesNamespace: garage-administration-api-go-code-samples
-        codeSamplesRevisionDigest: sha256:4d8c9514c5c3eeea1acc71130300b3f1a9bbd1f77bd8bc0c272a44f5e405e2b9
+        codeSamplesRevisionDigest: sha256:92bc40cb95a0e13b90185d6aa9f59f9922c80b2c8f58b0cef787a5fd2f9a3153
 workflow:
     workflowVersion: 1.0.0
     speakeasyVersion: latest

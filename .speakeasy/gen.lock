@@ -3,15 +3,17 @@ id: 598cf45f-27b2-4e16-bf20-64ce51376118
 management:
   docChecksum: 0cbf45e33208d35e2b4d66b03d22b712
   docVersion: v2.1.0
-  speakeasyVersion: 1.639.3
-  generationVersion: 2.730.5
-  releaseVersion: 0.1.1
-  configChecksum: 81740f078f3608b298ff8230907b7599
+  speakeasyVersion: 1.650.0
+  generationVersion: 2.743.2
+  releaseVersion: 0.2.0
+  configChecksum: 9a242ce3184ca5e510b17b879241de27
+  repoURL: https://github.com/guilhem/garage-go.git
+  installationURL: https://github.com/guilhem/garage-go
 features:
   go:
     additionalDependencies: 0.1.0
     constsAndDefaults: 0.1.12
-    core: 3.12.0
+    core: 3.13.1
     defaultEnabledRetries: 0.2.0
     devContainers: 2.90.0
     envVarSecurityUsage: 0.3.2
@@ -19,7 +21,7 @@ features:
     globalSecurity: 2.82.12
     globalSecurityCallbacks: 0.1.0
     globalSecurityFlattening: 0.1.0
-    globalServerURLs: 2.82.3
+    globalServerURLs: 2.83.0
     groups: 2.81.3
     intellisenseMarkdownSupport: 0.1.0
     methodSecurity: 2.82.4
@@ -739,3 +741,103 @@ examples:
         "200":
           application/json: {"error": {"key": "<value>", "key1": "<value>"}, "success": {"key": {"value": "<value>", "variable": "<value>"}}}
 examplesVersion: 1.0.2
+releaseNotes: |
+  ## Go SDK Changes Detected:
+  * `Garage.SpecialEndpoints.CheckDomain()`: **Added**
+  * `Garage.SpecialEndpoints.Health()`: **Added**
+  * `Garage.SpecialEndpoints.Metrics()`: **Added**
+  * `Garage.BucketAliases.Add()`: **Added**
+  * `Garage.BucketAliases.Remove()`: **Added**
+  * `Garage.Permissions.AllowBucketKey()`: **Added**
+  * `Garage.Permissions.DenyBucketKey()`: **Added**
+  * `Garage.ClusterLayout.Apply()`: **Added**
+  * `Garage.ClusterLayout.SkipDeadNodes()`: **Added**
+  * `Garage.ClusterLayout.Get()`: **Added**
+  * `Garage.ClusterLayout.GetHistory()`: **Added**
+  * `Garage.ClusterLayout.PreviewChanges()`: **Added**
+  * `Garage.ClusterLayout.Revert()`: **Added**
+  * `Garage.ClusterLayout.Update()`: **Added**
+  * `Garage.Buckets.CleanupIncompleteUploads()`: **Added**
+  * `Garage.Buckets.Create()`: **Added**
+  * `Garage.Buckets.Delete()`: **Added**
+  * `Garage.Buckets.InspectObject()`: **Added**
+  * `Garage.Buckets.List()`: **Added**
+  * `Garage.Buckets.Update()`: **Added**
+  * `Garage.Clusters.ConnectNodes()`: **Added**
+  * `Garage.Clusters.GetStatistics()`: **Added**
+  * `Garage.AdminApiTokens.Create()`: **Added**
+  * `Garage.AdminApiTokens.Delete()`: **Added**
+  * `Garage.AdminApiTokens.GetInfo()`: **Added**
+  * `Garage.AdminApiTokens.GetCurrentInfo()`: **Added**
+  * `Garage.AdminApiTokens.List()`: **Added**
+  * `Garage.AdminApiTokens.Update()`: **Added**
+  * `Garage.AccessKeys.Create()`: **Added**
+  * `Garage.AccessKeys.Delete()`: **Added**
+  * `Garage.AccessKeys.GetInfo()`: **Added**
+  * `Garage.AccessKeys.Import()`: **Added**
+  * `Garage.AccessKeys.List()`: **Added**
+  * `Garage.AccessKeys.Update()`: **Added**
+  * `Garage.Nodes.CreateMetadataSnapshot()`: **Added**
+  * `Garage.Nodes.GetInfo()`: **Added**
+  * `Garage.Nodes.GetStatistics()`: **Added**
+  * `Garage.Nodes.LaunchRepairOperation()`: **Added**
+  * `Garage.Blocks.GetInfo()`: **Added**
+  * `Garage.Blocks.ListErrors()`: **Added**
+  * `Garage.Blocks.Purge()`: **Added**
+  * `Garage.Blocks.RetryResync()`: **Added**
+  * `Garage.Bucket.GetInfo()`: **Added**
+  * `Garage.Cluster.GetHealth()`: **Added**
+  * `Garage.Cluster.GetStatus()`: **Added**
+  * `Garage.Workers.GetInfo()`: **Added**
+  * `Garage.Workers.GetVariable()`: **Added**
+  * `Garage.Workers.List()`: **Added**
+  * `Garage.Workers.SetVariable()`: **Added**
+  * `Garage.SpecialEndpoints.CheckDomain()`: **Deleted** **Breaking** :warning:
+  * `Garage.SpecialEndpoints.Health()`: **Deleted** **Breaking** :warning:
+  * `Garage.SpecialEndpoints.Metrics()`: **Deleted** **Breaking** :warning:
+  * `Garage.BucketAlias.AddBucketAlias()`: **Deleted** **Breaking** :warning:
+  * `Garage.BucketAlias.RemoveBucketAlias()`: **Deleted** **Breaking** :warning:
+  * `Garage.Permission.AllowBucketKey()`: **Deleted** **Breaking** :warning:
+  * `Garage.Permission.DenyBucketKey()`: **Deleted** **Breaking** :warning:
+  * `Garage.ClusterLayout.ApplyClusterLayout()`: **Deleted** **Breaking** :warning:
+  * `Garage.ClusterLayout.ClusterLayoutSkipDeadNodes()`: **Deleted** **Breaking** :warning:
+  * `Garage.ClusterLayout.GetClusterLayout()`: **Deleted** **Breaking** :warning:
+  * `Garage.ClusterLayout.GetClusterLayoutHistory()`: **Deleted** **Breaking** :warning:
+  * `Garage.ClusterLayout.PreviewClusterLayoutChanges()`: **Deleted** **Breaking** :warning:
+  * `Garage.ClusterLayout.RevertClusterLayout()`: **Deleted** **Breaking** :warning:
+  * `Garage.ClusterLayout.UpdateClusterLayout()`: **Deleted** **Breaking** :warning:
+  * `Garage.Bucket.CleanupIncompleteUploads()`: **Deleted** **Breaking** :warning:
+  * `Garage.Bucket.CreateBucket()`: **Deleted** **Breaking** :warning:
+  * `Garage.Bucket.DeleteBucket()`: **Deleted** **Breaking** :warning:
+  * `Garage.Bucket.GetBucketInfo()`: **Deleted** **Breaking** :warning:
+  * `Garage.Bucket.InspectObject()`: **Deleted** **Breaking** :warning:
+  * `Garage.Bucket.ListBuckets()`: **Deleted** **Breaking** :warning:
+  * `Garage.Bucket.UpdateBucket()`: **Deleted** **Breaking** :warning:
+  * `Garage.Cluster.ConnectClusterNodes()`: **Deleted** **Breaking** :warning:
+  * `Garage.Cluster.GetClusterHealth()`: **Deleted** **Breaking** :warning:
+  * `Garage.Cluster.GetClusterStatistics()`: **Deleted** **Breaking** :warning:
+  * `Garage.Cluster.GetClusterStatus()`: **Deleted** **Breaking** :warning:
+  * `Garage.AdminApiToken.CreateAdminToken()`: **Deleted** **Breaking** :warning:
+  * `Garage.AdminApiToken.DeleteAdminToken()`: **Deleted** **Breaking** :warning:
+  * `Garage.AdminApiToken.GetAdminTokenInfo()`: **Deleted** **Breaking** :warning:
+  * `Garage.AdminApiToken.GetCurrentAdminTokenInfo()`: **Deleted** **Breaking** :warning:
+  * `Garage.AdminApiToken.ListAdminTokens()`: **Deleted** **Breaking** :warning:
+  * `Garage.AdminApiToken.UpdateAdminToken()`: **Deleted** **Breaking** :warning:
+  * `Garage.AccessKey.CreateKey()`: **Deleted** **Breaking** :warning:
+  * `Garage.AccessKey.DeleteKey()`: **Deleted** **Breaking** :warning:
+  * `Garage.AccessKey.GetKeyInfo()`: **Deleted** **Breaking** :warning:
+  * `Garage.AccessKey.ImportKey()`: **Deleted** **Breaking** :warning:
+  * `Garage.AccessKey.ListKeys()`: **Deleted** **Breaking** :warning:
+  * `Garage.AccessKey.UpdateKey()`: **Deleted** **Breaking** :warning:
+  * `Garage.Node.CreateMetadataSnapshot()`: **Deleted** **Breaking** :warning:
+  * `Garage.Node.GetNodeInfo()`: **Deleted** **Breaking** :warning:
+  * `Garage.Node.GetNodeStatistics()`: **Deleted** **Breaking** :warning:
+  * `Garage.Node.LaunchRepairOperation()`: **Deleted** **Breaking** :warning:
+  * `Garage.Block.GetBlockInfo()`: **Deleted** **Breaking** :warning:
+  * `Garage.Block.ListBlockErrors()`: **Deleted** **Breaking** :warning:
+  * `Garage.Block.PurgeBlocks()`: **Deleted** **Breaking** :warning:
+  * `Garage.Block.RetryBlockResync()`: **Deleted** **Breaking** :warning:
+  * `Garage.Worker.GetWorkerInfo()`: **Deleted** **Breaking** :warning:
+  * `Garage.Worker.GetWorkerVariable()`: **Deleted** **Breaking** :warning:
+  * `Garage.Worker.ListWorkers()`: **Deleted** **Breaking** :warning:
+  * `Garage.Worker.SetWorkerVariable()`: **Deleted** **Breaking** :warning:

@@ -2,7 +2,7 @@
 
 package garage
 
-// Generated from OpenAPI doc version v2.1.0 and generator version 2.730.5
+// Generated from OpenAPI doc version v2.1.0 and generator version 2.743.2
 
 import (
 	"context"
@@ -142,9 +142,9 @@ func WithTimeout(timeout time.Duration) SDKOption {
 // New creates a new instance of the SDK with the provided options
 func New(opts ...SDKOption) *Garage {
 	sdk := &Garage{
-		SDKVersion: "0.1.1",
+		SDKVersion: "0.2.0",
 		sdkConfiguration: config.SDKConfiguration{
-			UserAgent:  "speakeasy-sdk/go 0.1.1 2.730.5 v2.1.0 github.com/guilhem/garage-go",
+			UserAgent:  "speakeasy-sdk/go 0.2.0 2.743.2 v2.1.0 github.com/guilhem/garage-go",
 			ServerList: ServerList,
 		},
 		hooks: hooks.New(),
